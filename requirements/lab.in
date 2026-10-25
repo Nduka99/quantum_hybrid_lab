@@ -1,0 +1,11 @@
+# Deployment 1 (QHybrid Lab) runtime. Compile with:
+# uv pip compile requirements/lab.in -c requirements/constraints.txt --python-version 3.11 \
+#   --python-platform x86_64-manylinux_2_28 --generate-hashes -o requirements/lab.lock
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+qiskit
+fastapi
+uvicorn

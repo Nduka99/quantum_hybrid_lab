@@ -1,0 +1,71 @@
+{
+  "files": {
+    "example_flows.json": {
+      "bytes": 21982,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "f0f243c495d7639a6e6e5c72d6f76f0bd8e39480bab8cd608e8c5527de5667b9",
+      "source": "frozen_validation partition, seed 0",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "example_request.json": {
+      "bytes": 3071,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "1cf06e6cf6ecb1da0952d5aed2ecd1abf80ad0828b95d979c0f2acc06c784268",
+      "source": "first three example flows",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "figures/accuracy_by_qubits.png": {
+      "bytes": 121660,
+      "sha256": "24cda3a866e535f12d891826ae9642ed544274918c6387f82e6de1552a172042",
+      "source": "scripts/build_lab_reference_runs.py",
+      "terms": "see the README data notice"
+    },
+    "figures/kernel_concentration.png": {
+      "bytes": 118587,
+      "sha256": "fcdb776bccdf735b6ebb79b05257bf956089fa262d56ebcc70933a618a331068",
+      "source": "scripts/build_lab_reference_runs.py",
+      "terms": "see the README data notice"
+    },
+    "figures/paired_differences.png": {
+      "bytes": 58134,
+      "sha256": "0efd1e2143bee4f093d565be3b9696d328d0c9b20607be0f9f74c93cc80fb976",
+      "source": "scripts/build_lab_reference_runs.py",
+      "terms": "see the README data notice"
+    },
+    "lightgbm_behaviour_only.txt": {
+      "bytes": 907279,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "55d206dc7b90f5c84b75da84c59d78a8f4fbc2f9bca3f7bae6e2bc9e43e35d57",
+      "source": "frozen classical benchmark model (private research pipeline)",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "lightgbm_behaviour_only_policy.json": {
+      "bytes": 2146,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "ab19f6c13b83135ce1c115130e647ea2c475d69f0ce68cd2aa68b90fd22be07b",
+      "source": "frozen classical benchmark model (private research pipeline)",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "model_card.json": {
+      "bytes": 3204,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "c710b3caa37cbb1f82f9ca569ac588ab16d81a9b03c59c234fb55aee4b7842af",
+      "source": "policy and classical benchmark manifest",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "network_flows_sample.csv.gz": {
+      "bytes": 66795,
+      "citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+      "sha256": "7b01f9e12740c88ce44c5d5a0e734fda2c33fff482afe90b0b01a7ab0b392ef1",
+      "source": "model_fit partition, seed 0",
+      "terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement."
+    },
+    "reference_runs.json": {
+      "bytes": 159927,
+      "sha256": "fa01ee8b23dcab98b9d3f0e5e539b8b3683049440e4d1173f11cf0b8a2f029f4",
+      "source": "scripts/build_lab_reference_runs.py",
+      "terms": "see the README data notice"
+    }
+  },
+  "schema_version": 1
+}

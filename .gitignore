@@ -1,0 +1,62 @@
+# Python environments and caches
+.quantumstudy/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.runtime/
+
+# Notebook runtime files
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Data: retain only directory placeholders
+data/raw/*
+!data/raw/.gitkeep
+data/external/*
+!data/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Model and local LLM artifacts
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+*.bin
+
+# Experiment services and local logs
+mlruns/
+logs/
+*.log
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Third-party papers are copyrighted; keep them local and cite them instead
+references/papers/
+
+# Row-level tables derived from licensed data stay local
+reports/tables/reliability/validation_predictions.csv
+reports/tables/low_data/nested_group_membership.csv.gz
+
+# Private publishing tool (Rule 7): never committed
+tools/publish/

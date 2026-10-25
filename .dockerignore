@@ -1,0 +1,12 @@
+# Allow-list: the image needs only the package, the lab deployment and its lock.
+*
+!pyproject.toml
+!README.md
+!LICENSE
+!src/
+!deployment/lab/
+!requirements/lab.lock
+!requirements/lab-test.lock
+!tests/lab/
+**/__pycache__
+**/*.pyc

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QHybrid Lab</title>
+  <meta name="description" content="Network-flow triage and a matched classical versus quantum-kernel classifier sandbox.">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <h1>QHybrid Lab</h1>
+      <p class="lede">A research demonstrator for quantum-classical hybrid machine learning: a
+        network-flow triage model with its frozen decision policy, and a sandbox that compares a
+        quantum-kernel classifier with classical models on identical inputs.</p>
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button role="tab" aria-selected="true" aria-controls="tab-triage" id="tab-btn-triage">Triage</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-lab" id="tab-btn-lab">Hybrid lab</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-method" id="tab-btn-method">Method &amp; limits</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="tab-triage" role="tabpanel" aria-labelledby="tab-btn-triage">
+      <p class="notice">Research demonstrator, not a production detector. The model was validated
+        on one corpus only, and its own frozen policy states it is not approved for deployment.</p>
+
+      <div class="grid-2">
+        <article class="card">
+          <h2>Score the example flows</h2>
+          <p class="muted">Twenty flows drawn at random (seed 0) from the held-out validation
+            partition of NF-UNSW-NB15-v2: ten benign, ten attacks covering every family.</p>
+          <label class="field">Decision policy
+            <select id="policy">
+              <option value="strict_fpr_0.001">Strict: false-positive rate ≤ 0.1%</option>
+              <option value="max_macro_f1">Balanced: maximum macro F1</option>
+              <option value="default_0.5">Default threshold 0.5</option>
+            </select>
+          </label>
+          <p class="muted small" id="policy-threshold"></p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Example flow scores">
+            <table id="examples-table">
+              <thead><tr><th>#</th><th>True class</th><th class="num">Calibrated risk</th><th>Decision</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Score your own flow</h2>
+          <p class="muted">The 29 raw NetFlow v2 behaviour features as JSON (non-negative, raw units).
+            Pick an example to start from, then edit any value.</p>
+          <label class="field">Start from
+            <select id="flow-source"></select>
+          </label>
+          <textarea id="flow-json" rows="14" spellcheck="false" aria-label="Flow features as JSON"></textarea>
+          <button id="score-flow" class="primary">Score flow</button>
+          <div id="flow-result" class="result" aria-live="polite"></div>
+        </article>
+      </div>
+
+      <article class="card">
+        <h2>Model card</h2>
+        <dl class="metrics" id="card-metrics"></dl>
+        <h3>Shortcut audit</h3>
+        <p id="card-shortcut"></p>
+        <h3>Limitations, verbatim from the frozen policy</h3>
+        <ul id="card-limitations"></ul>
+        <p class="muted small" id="card-explanations"></p>
+        <p class="citation" id="card-citation"></p>
+      </article>
+    </section>
+
+    <section id="tab-lab" role="tabpanel" aria-labelledby="tab-btn-lab" hidden>
+      <p class="notice">Sandbox, not research evidence. Each run uses one small sample and exact,
+        noiseless circuit simulation. The quantum model never gets a head start: every model sees
+        the same rows, the same features and the same tuning folds.</p>
+
+      <article class="card">
+        <h2>Run a matched comparison</h2>
+        <form id="lab-form" class="lab-form">
+          <label class="field wide">Dataset <select name="dataset" id="lab-dataset"></select></label>
+          <label class="field">Qubits <output id="qubits-value">4</output>
+            <input type="range" name="n_qubits" min="2" max="8" value="4" id="lab-qubits">
+          </label>
+          <label class="field">Feature-map repetitions
+            <select name="reps"><option value="2">2</option><option value="1">1</option></select>
+          </label>
+          <label class="field">Entanglement
+            <select name="entanglement"><option value="linear">Linear</option><option value="full">Full</option></select>
+          </label>
+          <label class="field">Training rows
+            <select name="n_train"><option>200</option><option>120</option><option>80</option><option>40</option></select>
+          </label>
+          <label class="field">Seed <input type="number" name="seed" min="0" max="99" value="0"></label>
+          <button type="submit" class="primary" id="lab-run">Run comparison</button>
+        </form>
+        <p class="muted small" id="dataset-info"></p>
+      </article>
+
+      <p id="lab-status" class="status" aria-live="polite"></p>
+
+      <div id="lab-results" hidden>
+        <article class="card">
+          <h2>Held-out results</h2>
+          <p id="lab-verdict" class="verdict"></p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Held-out results by model">
+            <table id="models-table">
+              <thead><tr><th>Model</th><th>Inputs</th><th class="num">CV bal. acc.</th><th class="num">Test bal. acc.</th>
+                <th class="num">Macro F1</th><th class="num">ROC-AUC</th><th class="num">PR-AUC</th><th>Chosen settings</th><th class="num">Seconds</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="muted small" id="lab-sample"></p>
+        </article>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Quantum bandwidth tuning (training folds only)</h3>
+            <table id="bandwidth-table">
+              <thead><tr><th class="num">Bandwidth</th><th class="num">CV bal. acc.</th><th class="num">Mean off-diagonal kernel</th><th></th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <p class="muted small">Mean off-diagonal values near 0 mean the kernel has concentrated:
+              every pair of training points looks unrelated.</p>
+          </article>
+          <article class="card">
+            <h3>Kernel diagnostics (training rows)</h3>
+            <table id="diagnostics-table">
+              <thead><tr><th>Diagnostic</th><th class="num">Quantum</th><th class="num">RBF</th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <h3>Circuit resources</h3>
+            <table id="resources-table"><tbody></tbody></table>
+          </article>
+        </div>
+      </div>
+
+      <article class="card">
+        <h2>Reference runs</h2>
+        <p class="muted">Pre-registered grid: two datasets × qubits {2, 4, 8, 12} × five seeds, with the
+          quantum bandwidth tuned or fixed at the conventional [0, π] scale.</p>
+        <figure>
+          <img src="/figures/accuracy_by_qubits.png" alt="Held-out balanced accuracy against qubits for the tuned and fixed-scale quantum kernels and the RBF SVM, on both datasets.">
+          <figcaption>With a tuned bandwidth the quantum kernel tracks the RBF SVM: across the eight
+            dataset-and-size cells its mean balanced accuracy ranged from 0.001 above to 0.036 below the
+            best matched classical model. At the fixed [0, π] scale it falls further behind as qubits are
+            added, reaching chance (0.50) on breast cancer at 12 qubits.</figcaption>
+        </figure>
+        <figure>
+          <img src="/figures/kernel_concentration.png" alt="Mean off-diagonal kernel value against qubits on a log scale.">
+          <figcaption>Why: at the fixed scale the mean kernel value collapses towards zero as qubits are
+            added (on breast cancer from 0.41 at 2 qubits to 0.0006 at 12), so every pair of points looks
+            unrelated. A tuned bandwidth keeps it comparable to the RBF kernel.</figcaption>
+        </figure>
+        <figure>
+          <img src="/figures/paired_differences.png" alt="Per-seed difference between the tuned quantum kernel and the best matched classical model.">
+          <figcaption>Paired by seed: the tuned quantum kernel scored at or below the best matched
+            classical model in 31 of 40 runs; its largest lead was 0.020. Its tuning usually settled at
+            the smallest bandwidth with the largest C, the smoothest kernel the grid allows.</figcaption>
+        </figure>
+        <h3>Reference table (mean of five seeds)</h3>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Reference table">
+          <table id="reference-table">
+            <thead><tr><th>Dataset</th><th class="num">Qubits</th><th class="num">Quantum, tuned</th><th class="num">Quantum, fixed [0, π]</th>
+              <th class="num">Best matched classical</th><th class="num">LightGBM, all features</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section id="tab-method" role="tabpanel" aria-labelledby="tab-btn-method" hidden>
+      <article class="card prose">
+        <h2>What this is</h2>
+        <p>Two pieces of a larger research programme on where, if anywhere, quantum machine learning
+          helps cybersecurity classification. The programme is classical-first: quantum research
+          claims wait for a classical evidence gate. Until then the quantum part is shown only as this
+          labelled sandbox.</p>
+        <h2>Triage model</h2>
+        <p>A LightGBM classifier on 29 behaviour features of NetFlow v2 records, with Platt
+          calibration and three thresholds frozen on separate partitions. The service reproduces the
+          research notebook's confusion matrix on all 478,055 validation flows, and refuses to start
+          if any shipped file differs from its recorded SHA-256 hash.</p>
+        <h2>Hybrid lab protocol</h2>
+        <ol>
+          <li>One stratified sample: up to 200 training rows and 200 test rows.</li>
+          <li>Standard scaling → PCA to one component per qubit → rescaling to [0, 1], all fitted on
+            training rows only.</li>
+          <li>Logistic regression, linear SVM, RBF SVM and a quantum-kernel SVM are tuned on the same
+            five folds with the same scorer, then scored once on the test rows.</li>
+          <li>The quantum kernel is K(x, y) = |⟨ψ(bx)|ψ(by)⟩|² for a ZZ feature map, simulated exactly.
+            Its bandwidth b is tuned like the RBF kernel's gamma.</li>
+          <li>LightGBM on all original features of the same rows is shown as a classical control.</li>
+        </ol>
+        <h2>Why bandwidth matters</h2>
+        <p>Without bandwidth tuning, quantum kernel values concentrate towards zero as qubits are
+          added, and the classifier degrades towards guessing. Published analyses: Shaydulin &amp; Wild,
+          arXiv:2111.05451; Thanasilp, Wang, Cerezo &amp; Holmes, Nature Communications (2024),
+          doi:10.1038/s41467-024-49287-w.</p>
+        <h2>Limits</h2>
+        <ul>
+          <li>Noiseless statevector simulation; real hardware adds shot noise and gate errors, and
+            would need the number of fidelity circuits shown under circuit resources.</li>
+          <li>Small samples; differences of a few points are within seed-to-seed variation.</li>
+          <li>No result here is evidence of quantum advantage, and none is claimed.</li>
+        </ul>
+        <h2>Data and licences</h2>
+        <p>Code: Apache-2.0. NF-UNSW-NB15-v2 (Sarhan, Layeghy &amp; Portmann, 2022,
+          doi:10.1007/s11036-021-01843-0): academic re-use with citation, commercial use restricted.
+          Breast Cancer Wisconsin (Diagnostic) (Wolberg et al., 1993, doi:10.24432/C5DW2B): CC BY 4.0.</p>
+        <p>The API is documented at <a href="/docs">/docs</a>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>QHybrid Lab · research demonstrator · no data you enter is stored.</p>
+  </footer>
+</body>
+</html>

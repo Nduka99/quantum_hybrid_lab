@@ -1,0 +1,72 @@
+{
+  "calibration": "Sigmoid (Platt) map fitted on a separate calibration partition.",
+  "data_citation": "Mohanad Sarhan, Siamak Layeghy and Marius Portmann. Towards a Standard Feature Set for Network Intrusion Detection System Datasets. Mobile Networks and Applications (2022). https://doi.org/10.1007/s11036-021-01843-0",
+  "data_terms": "NF-UNSW-NB15-v2, University of Queensland: permitted re-use with commercial use restriction. Academic use requires the citation; commercial use requires the authors' agreement.",
+  "experiment_id": "20260720_uq_nf_unsw_nb15_v2_classical_seed42",
+  "explanations": "Per-flow reason codes are disabled until explanation stability is proven.",
+  "features_in_order": [
+    "IN_BYTES",
+    "IN_PKTS",
+    "OUT_BYTES",
+    "OUT_PKTS",
+    "FLOW_DURATION_MILLISECONDS",
+    "DURATION_IN",
+    "DURATION_OUT",
+    "MIN_TTL",
+    "MAX_TTL",
+    "LONGEST_FLOW_PKT",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN",
+    "MAX_IP_PKT_LEN",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "RETRANSMITTED_OUT_BYTES",
+    "RETRANSMITTED_OUT_PKTS",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "NUM_PKTS_UP_TO_128_BYTES",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "DNS_TTL_ANSWER"
+  ],
+  "input_contract": "published raw units; finite non-negative numeric values",
+  "limitations": [
+    "internal same-corpus validation only",
+    "laboratory shortcut evidence is material",
+    "no temporal or capture-session split is possible from published columns",
+    "not approved for deployment"
+  ],
+  "model_sha256": "55d206dc7b90f5c84b75da84c59d78a8f4fbc2f9bca3f7bae6e2bc9e43e35d57",
+  "name": "NetFlow v2 triage classifier (LightGBM, behaviour-only features)",
+  "policies": {
+    "default_0.5": "Uncalibrated-style default threshold of 0.5",
+    "max_macro_f1": "Threshold that maximised validation macro F1",
+    "strict_fpr_0.001": "Maximum recall with validation false-positive rate <= 0.001"
+  },
+  "shortcut_audit": {
+    "macro_f1_lost_when_shortcut_features_removed": 0.0015944749359909638,
+    "reading": "TTL-based features alone separate this corpus well, so high scores partly reflect laboratory artefacts. Removing them costs little macro F1, but same-corpus results do not establish generalisation to other networks.",
+    "shortcut_only_control_macro_f1": 0.9540798799008134,
+    "shortcut_resistant_tier_macro_f1": 0.979434572192529
+  },
+  "status": "Research demonstrator. The frozen policy states: not approved for deployment.",
+  "thresholds": {
+    "default_0.5": 0.5,
+    "maximum_macro_f1": 0.48519230766792376,
+    "maximum_recall_under_fpr_0.001": 0.8406715655714669
+  },
+  "validation": {
+    "attack_recall_at_strict_threshold": 0.9065754865860074,
+    "false_alerts_per_100k_benign_at_strict_threshold": 98.46529207376183,
+    "macro_f1_at_max_macro_f1_threshold": 0.98102904712852,
+    "partition": "frozen_validation (same corpus, group-aware split)",
+    "pr_auc": 0.9912410646504922,
+    "rows": 478055
+  }
+}

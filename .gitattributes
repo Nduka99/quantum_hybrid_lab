@@ -1,0 +1,10 @@
+# Normalise text to LF so file hashes match on every operating system.
+* text=auto eol=lf
+
+# Deployment assets are hashed in MANIFEST.json; never convert their bytes.
+deployment/**/assets/** binary
+*.png binary
+*.pdf binary
+*.gz binary
+*.npz binary
+*.skops binary

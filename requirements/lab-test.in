@@ -1,0 +1,5 @@
+# Test-only additions for the lab image. Compile with:
+# uv pip compile requirements/lab-test.in -c requirements/lab.lock --python-version 3.11 \
+#   --python-platform x86_64-manylinux_2_28 --generate-hashes -o requirements/lab-test.lock
+pytest
+httpx2

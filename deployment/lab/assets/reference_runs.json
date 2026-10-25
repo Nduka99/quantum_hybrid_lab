@@ -1,0 +1,6169 @@
+{
+ "matched_tiers": [
+  "matched classical",
+  "matched quantum"
+ ],
+ "protocol": "Fixed before running (README, Method): 200 train / 200 test rows per run, 5-fold CV shared by matched models, ZZ feature map with 2 reps and linear entanglement.",
+ "runs": [
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 4.594,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.565,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.594700728146166,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5733447191229886,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.65,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6693800795269416,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.665,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.695169970945589,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 8.34915807823445,
+    "kernel_target_alignment": 0.023729377270524515,
+    "offdiagonal_mean": 0.3455781329195878,
+    "offdiagonal_std": 0.2582264361116185
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 6.650912526520795,
+    "kernel_target_alignment": 0.04370812435693621,
+    "offdiagonal_mean": 0.35312963659459906,
+    "offdiagonal_std": 0.33816414454268606
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.154,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.565,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.594700728146166,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5733447191229886,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.65,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6693800795269416,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.665,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.695169970945589,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 8.34915807823445,
+    "kernel_target_alignment": 0.023729377270524515,
+    "offdiagonal_mean": 0.3455781329195878,
+    "offdiagonal_std": 0.2582264361116185
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 6.650912526520795,
+    "kernel_target_alignment": 0.04370812435693621,
+    "offdiagonal_mean": 0.35312963659459906,
+    "offdiagonal_std": 0.33816414454268606
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.892,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.6141933720392078,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6157102867486943,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6829883402180148,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.69,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.7045458713483282,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 7.2065004289255326,
+    "kernel_target_alignment": 0.04609970422682276,
+    "offdiagonal_mean": 0.36534213690377626,
+    "offdiagonal_std": 0.2808096525216912
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 18.083346759493168,
+    "kernel_target_alignment": 0.09564739925822416,
+    "offdiagonal_mean": 0.1397567546179135,
+    "offdiagonal_std": 0.2759392203584223
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.652,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.6141933720392078,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6157102867486943,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6829883402180148,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.69,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.7045458713483282,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 7.2065004289255326,
+    "kernel_target_alignment": 0.04609970422682276,
+    "offdiagonal_mean": 0.36534213690377626,
+    "offdiagonal_std": 0.2808096525216912
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 18.083346759493168,
+    "kernel_target_alignment": 0.09564739925822416,
+    "offdiagonal_mean": 0.1397567546179135,
+    "offdiagonal_std": 0.2759392203584223
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.159,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.64,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6415162236292093,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6699999999999999,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.640248343127588,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.69,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.5
+     },
+     "pr_auc": 0.6516872858717042,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.715,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.7284382278267488,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 2.0653247731264757,
+    "kernel_target_alignment": 0.0419646898345143,
+    "offdiagonal_mean": 0.7172537477562099,
+    "offdiagonal_std": 0.29775822392487933
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 29.589546951856402,
+    "kernel_target_alignment": 0.0984276162246538,
+    "offdiagonal_mean": 0.09059603504763417,
+    "offdiagonal_std": 0.21666440854716842
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.5,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.089,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.64,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6415162236292093,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6699999999999999,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.640248343127588,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7050000000000001,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7566841784098108,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.715,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.7284382278267488,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 7.7081891258575865,
+    "kernel_target_alignment": 0.03258243997591495,
+    "offdiagonal_mean": 0.36481804083067665,
+    "offdiagonal_std": 0.26466487481145673
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 29.589546951856402,
+    "kernel_target_alignment": 0.0984276162246538,
+    "offdiagonal_mean": 0.09059603504763417,
+    "offdiagonal_std": 0.21666440854716842
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 4.487,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.645,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7173288318110196,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.61,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.714198254955787,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.6,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 0.5
+     },
+     "pr_auc": 0.7190093960034268,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.6551525694353433,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 2.1690379308437153,
+    "kernel_target_alignment": 0.03003440715518151,
+    "offdiagonal_mean": 0.680647945803297,
+    "offdiagonal_std": 0.32390278053985266
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 6.08599322027209,
+    "kernel_target_alignment": 0.0428366307237005,
+    "offdiagonal_mean": 0.35803819166549955,
+    "offdiagonal_std": 0.344400336321072
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.5,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.885,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.645,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7173288318110196,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.61,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.714198254955787,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.58,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6072942251633537,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.6551525694353433,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.7935534239351805,
+    "kernel_target_alignment": 0.008173816267354939,
+    "offdiagonal_mean": 0.39902889486749626,
+    "offdiagonal_std": 0.27428210310374046
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 6.08599322027209,
+    "kernel_target_alignment": 0.0428366307237005,
+    "offdiagonal_mean": 0.35803819166549955,
+    "offdiagonal_std": 0.344400336321072
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 4.12,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.62,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.5902975636686414,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6399999999999999,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.5845926749157806,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 1.0
+     },
+     "pr_auc": 0.673769205642657,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.735,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.701480535458916,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 3.8142881255076455,
+    "kernel_target_alignment": 0.023555318598200207,
+    "offdiagonal_mean": 0.4881743380978862,
+    "offdiagonal_std": 0.34344949936366725
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 5.433125500700619,
+    "kernel_target_alignment": 0.04435094080792097,
+    "offdiagonal_mean": 0.4153224790592847,
+    "offdiagonal_std": 0.34407618850035904
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 1.0,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.999,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.62,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.5902975636686414,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6399999999999999,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.5845926749157806,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.645,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6404137250820783,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.735,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.701480535458916,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.847782384883538,
+    "kernel_target_alignment": 0.020395575311422897,
+    "offdiagonal_mean": 0.3827331650720164,
+    "offdiagonal_std": 0.2779357301228852
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 5.433125500700619,
+    "kernel_target_alignment": 0.04435094080792097,
+    "offdiagonal_mean": 0.4153224790592847,
+    "offdiagonal_std": 0.34407618850035904
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.552,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.5750547487114496,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5844073275988815,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.79,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.5
+     },
+     "pr_auc": 0.7950801677752571,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.7849999999999999,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.8342442183169274,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.076768991257176,
+    "kernel_target_alignment": 0.03539342883240692,
+    "offdiagonal_mean": 0.39730456178067003,
+    "offdiagonal_std": 0.3661451681801369
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 63.87185752806432,
+    "kernel_target_alignment": 0.10218735394635314,
+    "offdiagonal_mean": 0.04155052540491377,
+    "offdiagonal_std": 0.14203899699166092
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.5,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.247,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.5750547487114496,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.605,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5844073275988815,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.76,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7870160542024338,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.7849999999999999,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.8342442183169274,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 46.13607139491743,
+    "kernel_target_alignment": 0.09215789362074793,
+    "offdiagonal_mean": 0.10729128244857891,
+    "offdiagonal_std": 0.1477439677843535
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 63.87185752806432,
+    "kernel_target_alignment": 0.10218735394635314,
+    "offdiagonal_mean": 0.04155052540491377,
+    "offdiagonal_std": 0.14203899699166092
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.547,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.635,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6166750347439725,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.5922556092942952,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.77,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 1.0
+     },
+     "pr_auc": 0.7351157022772581,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.75,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7395141499112073,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 22.28695195115235,
+    "kernel_target_alignment": 0.09502399315618651,
+    "offdiagonal_mean": 0.15449407782628577,
+    "offdiagonal_std": 0.23591546910936026
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 13.901710016672777,
+    "kernel_target_alignment": 0.08043892542863526,
+    "offdiagonal_mean": 0.2313114965153394,
+    "offdiagonal_std": 0.2889465177415924
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 1.0,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.246,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.635,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6166750347439725,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.5922556092942952,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.69,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6700469300423939,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.75,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7395141499112073,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 52.74292118615915,
+    "kernel_target_alignment": 0.10018387548886135,
+    "offdiagonal_mean": 0.09975653126348905,
+    "offdiagonal_std": 0.14314256776104098
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 13.901710016672777,
+    "kernel_target_alignment": 0.08043892542863526,
+    "offdiagonal_mean": 0.2313114965153394,
+    "offdiagonal_std": 0.2889465177415924
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.569,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.6799999999999999,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.6311327640854825,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.7,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6337515023414164,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8300000000000001,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 1.0
+     },
+     "pr_auc": 0.7979544670063852,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8300000000000001,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7955186817735983,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 16.366628105381462,
+    "kernel_target_alignment": 0.050766897836623456,
+    "offdiagonal_mean": 0.21117040760957811,
+    "offdiagonal_std": 0.2653518124796507
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 11.697498745304264,
+    "kernel_target_alignment": 0.07728045823781049,
+    "offdiagonal_mean": 0.26712704524057024,
+    "offdiagonal_std": 0.2942689453972368
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 1.0,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.251,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.6799999999999999,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.6311327640854825,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.7,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6337515023414164,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.79,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8356518478933144,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8300000000000001,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7955186817735983,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 37.46771497299388,
+    "kernel_target_alignment": 0.06962980830646799,
+    "offdiagonal_mean": 0.142674072632905,
+    "offdiagonal_std": 0.1788972703351807
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 11.697498745304264,
+    "kernel_target_alignment": 0.07728045823781049,
+    "offdiagonal_mean": 0.26712704524057024,
+    "offdiagonal_std": 0.2942689453972368
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.846,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.67,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6932152914963865,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6499999999999999,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6894231525190284,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.755,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 1.0
+     },
+     "pr_auc": 0.6994452923135495,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.775,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.8089205522392885,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 18.668786194102804,
+    "kernel_target_alignment": 0.03875732534505936,
+    "offdiagonal_mean": 0.19009708230091688,
+    "offdiagonal_std": 0.24316296425698355
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 71.27079786459073,
+    "kernel_target_alignment": 0.07906126626702642,
+    "offdiagonal_mean": 0.031804007281650726,
+    "offdiagonal_std": 0.12793210442255773
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 1.0,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.377,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.67,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.6932152914963865,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6499999999999999,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6894231525190284,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6956656205329717,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.775,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 100.0
+     },
+     "pr_auc": 0.8089205522392885,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 43.867527849809775,
+    "kernel_target_alignment": 0.04855572197368643,
+    "offdiagonal_mean": 0.11377021623079689,
+    "offdiagonal_std": 0.15560625626125907
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 71.27079786459073,
+    "kernel_target_alignment": 0.07906126626702642,
+    "offdiagonal_mean": 0.031804007281650726,
+    "offdiagonal_std": 0.12793210442255773
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.606,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.655,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5776912716839807,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6399999999999999,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.5760131372897002,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.75,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.5
+     },
+     "pr_auc": 0.7001721113235648,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.7749999999999999,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7098669892603201,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.458808779754587,
+    "kernel_target_alignment": 0.02451651251443559,
+    "offdiagonal_mean": 0.43005337577426345,
+    "offdiagonal_std": 0.33088706437479765
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 14.127984756495541,
+    "kernel_target_alignment": 0.05888371387853259,
+    "offdiagonal_mean": 0.2371128534264078,
+    "offdiagonal_std": 0.28347293975918136
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.5,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.303,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.655,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.5776912716839807,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6399999999999999,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.5760131372897002,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.72,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7797562628570207,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.7749999999999999,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.7098669892603201,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 53.81389901583822,
+    "kernel_target_alignment": 0.061444652024611024,
+    "offdiagonal_mean": 0.09523487281135318,
+    "offdiagonal_std": 0.14147651229104874
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 14.127984756495541,
+    "kernel_target_alignment": 0.05888371387853259,
+    "offdiagonal_mean": 0.2371128534264078,
+    "offdiagonal_std": 0.28347293975918136
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.672,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.72,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6928704151867937,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.7,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.702484283448257,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.85,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.9101935148220436,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.85,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9087295361602657,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.6802588633427504,
+    "kernel_target_alignment": 0.005093715807628698,
+    "offdiagonal_mean": 0.8973284489950474,
+    "offdiagonal_std": 0.07663253841526528
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 4.883076223086169,
+    "kernel_target_alignment": 0.021225208372398573,
+    "offdiagonal_mean": 0.6231686277747261,
+    "offdiagonal_std": 0.19736216280635283
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.768,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.72,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.6928704151867937,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.7,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.702484283448257,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.735,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.804010388723265,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.85,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9087295361602657,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 131.5078444823621,
+    "kernel_target_alignment": 0.10658956505543024,
+    "offdiagonal_mean": 0.013395782856482548,
+    "offdiagonal_std": 0.06749227360899408
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 4.883076223086169,
+    "kernel_target_alignment": 0.021225208372398573,
+    "offdiagonal_mean": 0.6231686277747261,
+    "offdiagonal_std": 0.19736216280635283
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.63,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.7050000000000001,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.670890184125076,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.715,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.6675106724509722,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8400000000000001,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.7334388888856762,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.84,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.7796636469061973,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.2251416083683349,
+    "kernel_target_alignment": 0.0011784040891337651,
+    "offdiagonal_mean": 0.9667567610403401,
+    "offdiagonal_std": 0.028382966552959882
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.3683625028472914,
+    "kernel_target_alignment": 0.0021792737206053274,
+    "offdiagonal_mean": 0.9474924175574102,
+    "offdiagonal_std": 0.03909987587586746
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.586,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.7050000000000001,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.670890184125076,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.715,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.6675106724509722,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7250000000000001,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8451231442350033,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.84,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.7796636469061973,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 123.13351779400105,
+    "kernel_target_alignment": 0.10649612465551923,
+    "offdiagonal_mean": 0.012800492890882413,
+    "offdiagonal_std": 0.07565241643063485
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.3683625028472914,
+    "kernel_target_alignment": 0.0021792737206053274,
+    "offdiagonal_mean": 0.9474924175574102,
+    "offdiagonal_std": 0.03909987587586746
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.98,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.74,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.753787841564816,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.735,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7701312796122561,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8300000000000001,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.8422977303323522,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8200000000000001,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.8329094860569046,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.684894085486681,
+    "kernel_target_alignment": 0.00372219153824896,
+    "offdiagonal_mean": 0.8986470651525506,
+    "offdiagonal_std": 0.07522207043641058
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 53.14079994017059,
+    "kernel_target_alignment": 0.08673062103617073,
+    "offdiagonal_mean": 0.07422785263518963,
+    "offdiagonal_std": 0.15658518680737576
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.891,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.74,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.753787841564816,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.735,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7701312796122561,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8400000000000001,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8544864136899204,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8200000000000001,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.8329094860569046,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 132.0675804664351,
+    "kernel_target_alignment": 0.09114394932772134,
+    "offdiagonal_mean": 0.014051244883182115,
+    "offdiagonal_std": 0.06980204970780732
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 53.14079994017059,
+    "kernel_target_alignment": 0.08673062103617073,
+    "offdiagonal_mean": 0.07422785263518963,
+    "offdiagonal_std": 0.15658518680737576
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.794,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7184797738055293,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.720971345207748,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.835,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.25
+     },
+     "pr_auc": 0.8715758194792316,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8500000000000001,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.8262479912089342,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 5.975937608508552,
+    "kernel_target_alignment": 0.02683444311664807,
+    "offdiagonal_mean": 0.5546723080500681,
+    "offdiagonal_std": 0.2167403223699652
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.3607922518990836,
+    "kernel_target_alignment": 0.001701163647592872,
+    "offdiagonal_mean": 0.9483388832626393,
+    "offdiagonal_std": 0.033027219294150346
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.25,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.741,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.685,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7184797738055293,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.71,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.720971345207748,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.745,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8060096757553181,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8500000000000001,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.8262479912089342,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 121.94815172066365,
+    "kernel_target_alignment": 0.08761839420881246,
+    "offdiagonal_mean": 0.0143605042456426,
+    "offdiagonal_std": 0.07479551757289674
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.3607922518990836,
+    "kernel_target_alignment": 0.001701163647592872,
+    "offdiagonal_mean": 0.9483388832626393,
+    "offdiagonal_std": 0.033027219294150346
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.849,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.68,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.7076111380781831,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6599999999999999,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7198493144068097,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.85,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.8797053516540725,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.84,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.8363293429277521,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.7384058532104343,
+    "kernel_target_alignment": 0.003588091265100261,
+    "offdiagonal_mean": 0.8915669307464744,
+    "offdiagonal_std": 0.07816971271460994
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 5.5482388263722315,
+    "kernel_target_alignment": 0.018009216386208504,
+    "offdiagonal_mean": 0.5993520996679677,
+    "offdiagonal_std": 0.20867487187292816
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 1.677,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.68,
+     "hyperparameters": {
+      "C": 1.0
+     },
+     "pr_auc": 0.7076111380781831,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.6599999999999999,
+     "hyperparameters": {
+      "C": 0.1
+     },
+     "pr_auc": 0.7198493144068097,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.78,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8066683736530751,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.84,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.8363293429277521,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 137.57821409757923,
+    "kernel_target_alignment": 0.08220527557502515,
+    "offdiagonal_mean": 0.011567679756491485,
+    "offdiagonal_std": 0.06773139098427829
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 5.5482388263722315,
+    "kernel_target_alignment": 0.018009216386208504,
+    "offdiagonal_mean": 0.5993520996679677,
+    "offdiagonal_std": 0.20867487187292816
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 7.115,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9099999999999999,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9317029852655275,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.915,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9294584163987576,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8999999999999999,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.9278827443822806,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.89,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9420899765847525,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.96342631831623,
+    "kernel_target_alignment": 0.005427953614736203,
+    "offdiagonal_mean": 0.8706554646525777,
+    "offdiagonal_std": 0.0875471199681265
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.260703610666449,
+    "kernel_target_alignment": 0.02422876354794924,
+    "offdiagonal_mean": 0.5495643351644107,
+    "offdiagonal_std": 0.20074072673143378
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.753,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9632106636751732,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9099999999999999,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9317029852655275,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.915,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9294584163987576,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.785,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8790049050660722,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.89,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9420899765847525,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 144.4923800282363,
+    "kernel_target_alignment": 0.10103027380820015,
+    "offdiagonal_mean": 0.005659563606176162,
+    "offdiagonal_std": 0.05899562064151674
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.260703610666449,
+    "kernel_target_alignment": 0.02422876354794924,
+    "offdiagonal_mean": 0.5495643351644107,
+    "offdiagonal_std": 0.20074072673143378
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 7.369,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.835,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.8083815535762473,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.815,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.774724997197826,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.87,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.797046808889314,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.875,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.8855573041711361,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.3232240033789993,
+    "kernel_target_alignment": 0.001636481384693946,
+    "offdiagonal_mean": 0.9547194133739099,
+    "offdiagonal_std": 0.03252912575511123
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.5075452892728156,
+    "kernel_target_alignment": 0.002707429499988664,
+    "offdiagonal_mean": 0.9322838900473746,
+    "offdiagonal_std": 0.046551909741649154
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.132,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.94,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9650157688890293,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.835,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.8083815535762473,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.815,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.774724997197826,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7949999999999999,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8745216673078214,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.875,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.8855573041711361,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 136.47782679298675,
+    "kernel_target_alignment": 0.10107542380048185,
+    "offdiagonal_mean": 0.0064100257143975044,
+    "offdiagonal_std": 0.06792485820692766
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.5075452892728156,
+    "kernel_target_alignment": 0.002707429499988664,
+    "offdiagonal_mean": 0.9322838900473746,
+    "offdiagonal_std": 0.046551909741649154
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 7.323,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.87,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.8490555002889182,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.815,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8584507824096755,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8999999999999999,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.8687041230609043,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8799999999999999,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.8547544502888318,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.29456869775098,
+    "kernel_target_alignment": 0.001174867043569395,
+    "offdiagonal_mean": 0.958835609449863,
+    "offdiagonal_std": 0.03238199193382474
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.0553391830726595,
+    "kernel_target_alignment": 0.00019405145360993481,
+    "offdiagonal_mean": 0.9935883218006848,
+    "offdiagonal_std": 0.004358260521806475
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.165,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.925,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9537718571461561,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.87,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.8490555002889182,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.815,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8584507824096755,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.855,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.9087340592298848,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.8799999999999999,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.8547544502888318,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 148.0620477804707,
+    "kernel_target_alignment": 0.09336228232328829,
+    "offdiagonal_mean": 0.005946268141882482,
+    "offdiagonal_std": 0.057522958591426164
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.0553391830726595,
+    "kernel_target_alignment": 0.00019405145360993481,
+    "offdiagonal_mean": 0.9935883218006848,
+    "offdiagonal_std": 0.004358260521806475
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 7.189,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.845,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8614444705214772,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.79,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.8216772137278742,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.915,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9317488177331253,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9450000000000001,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9350288477965075,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.3017402598528653,
+    "kernel_target_alignment": 0.0015666973976367973,
+    "offdiagonal_mean": 0.9577617211242639,
+    "offdiagonal_std": 0.027618912073227902
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.20048319307375,
+    "kernel_target_alignment": 0.02047243271422275,
+    "offdiagonal_mean": 0.5507260528443391,
+    "offdiagonal_std": 0.20188158967976985
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 2.993,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.92,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9759401398419226,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.845,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8614444705214772,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.79,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.8216772137278742,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7649999999999999,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8701590832814496,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9450000000000001,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9350288477965075,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 133.3893260464807,
+    "kernel_target_alignment": 0.09147730570547102,
+    "offdiagonal_mean": 0.006816313395052069,
+    "offdiagonal_std": 0.0670839205627961
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.20048319307375,
+    "kernel_target_alignment": 0.02047243271422275,
+    "offdiagonal_mean": 0.5507260528443391,
+    "offdiagonal_std": 0.20188158967976985
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 7.434,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.905,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.8836294404331047,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.865,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8899910626716672,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8999999999999999,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9068062500525015,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9199999999999999,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9314180879615501,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.3415704388251428,
+    "kernel_target_alignment": 0.0011217840611708887,
+    "offdiagonal_mean": 0.9521879096081599,
+    "offdiagonal_std": 0.03677103290172223
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 8.086939798634047,
+    "kernel_target_alignment": 0.022294488984262333,
+    "offdiagonal_mean": 0.5248195376607877,
+    "offdiagonal_std": 0.2125419315072852
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "network_flows",
+   "elapsed_seconds": 3.176,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.935,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9795692627148278,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.905,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.8836294404331047,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.865,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.8899910626716672,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.795,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8850676978886143,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9199999999999999,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9314180879615501,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 146.11130228457233,
+    "kernel_target_alignment": 0.07988206463493876,
+    "offdiagonal_mean": 0.005807479081607956,
+    "offdiagonal_std": 0.06268607901701546
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 8.086939798634047,
+    "kernel_target_alignment": 0.022294488984262333,
+    "offdiagonal_mean": 0.5248195376607877,
+    "offdiagonal_std": 0.2125419315072852
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.912,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.947983697983698,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9798144703359148,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9642857142857143,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9850257537702444,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9603174603174602,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.981349601942249,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9614972114972116,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.9885263418243755,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0786729530640005,
+    "kernel_target_alignment": 0.06831795404176504,
+    "offdiagonal_mean": 0.9861515398296427,
+    "offdiagonal_std": 0.020202003470078604
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 5.011469904095524,
+    "kernel_target_alignment": 0.3739376919333001,
+    "offdiagonal_mean": 0.4742452387109896,
+    "offdiagonal_std": 0.3261886578132273
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.229,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.947983697983698,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9798144703359148,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9642857142857143,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9850257537702444,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8001930501930501,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.831405469874191,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9614972114972116,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.9885263418243755,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 7.665144030322217,
+    "kernel_target_alignment": 0.17935892964515004,
+    "offdiagonal_mean": 0.36121942961003034,
+    "offdiagonal_std": 0.2664987695606032
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 5.011469904095524,
+    "kernel_target_alignment": 0.3739376919333001,
+    "offdiagonal_mean": 0.4742452387109896,
+    "offdiagonal_std": 0.3261886578132273
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.51,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.944015444015444,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9762160415434664,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9344701844701845,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.975730940094033,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9213856713856714,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.9751295486889926,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9213856713856714,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9747929224253755,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0626210214991065,
+    "kernel_target_alignment": 0.066105127782692,
+    "offdiagonal_mean": 0.9893931866618569,
+    "offdiagonal_std": 0.01631532460813964
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.06407465591584,
+    "kernel_target_alignment": 0.0675315367074646,
+    "offdiagonal_mean": 0.9900883909465958,
+    "offdiagonal_std": 0.012641674324574175
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.921,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.944015444015444,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9762160415434664,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9344701844701845,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.975730940094033,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8983268983268984,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.913068499934065,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9213856713856714,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9747929224253755,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 7.304542132994189,
+    "kernel_target_alignment": 0.20736187047878532,
+    "offdiagonal_mean": 0.3707535489592232,
+    "offdiagonal_std": 0.2710883825370687
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.06407465591584,
+    "kernel_target_alignment": 0.0675315367074646,
+    "offdiagonal_mean": 0.9900883909465958,
+    "offdiagonal_std": 0.012641674324574175
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.036,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9587087087087087,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9877668372471622,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9913216862992416,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.25
+     },
+     "pr_auc": 0.9877949015921064,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9587087087087087,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9901990469980869,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.3068139835591157,
+    "kernel_target_alignment": 0.08834219828113886,
+    "offdiagonal_mean": 0.9321937502459959,
+    "offdiagonal_std": 0.0999347113101189
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.0099359442537423,
+    "kernel_target_alignment": 0.06312805589134807,
+    "offdiagonal_mean": 0.99880976077394,
+    "offdiagonal_std": 0.0014823309843637745
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.25,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.398,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9587087087087087,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9877668372471622,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9913216862992416,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8701201201201201,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.9092694662133987,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9587087087087087,
+     "hyperparameters": {
+      "C": 1000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9901990469980869,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.0955057692604235,
+    "kernel_target_alignment": 0.1919675578208723,
+    "offdiagonal_mean": 0.457118617042875,
+    "offdiagonal_std": 0.2775637325251852
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.0099359442537423,
+    "kernel_target_alignment": 0.06312805589134807,
+    "offdiagonal_mean": 0.99880976077394,
+    "offdiagonal_std": 0.0014823309843637745
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.977,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.944015444015444,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9876026330663623,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.947983697983698,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9876026330663623,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.944015444015444,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9873867458121156,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9559202059202059,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9835097097293614,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0208773707284746,
+    "kernel_target_alignment": 0.06356201117482414,
+    "offdiagonal_mean": 0.9970386487011698,
+    "offdiagonal_std": 0.004806719707094475
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.4833374779324475,
+    "kernel_target_alignment": 0.11144633022128028,
+    "offdiagonal_mean": 0.9050263687147716,
+    "offdiagonal_std": 0.09913770768003435
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.263,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.944015444015444,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9876026330663623,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.947983697983698,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9876026330663623,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8256113256113256,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7243041510016938,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9559202059202059,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9835097097293614,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.332119238904386,
+    "kernel_target_alignment": 0.18701614470453426,
+    "offdiagonal_mean": 0.44197741572582094,
+    "offdiagonal_std": 0.2763913727944214
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.4833374779324475,
+    "kernel_target_alignment": 0.11144633022128028,
+    "offdiagonal_mean": 0.9050263687147716,
+    "offdiagonal_std": 0.09913770768003435
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.596,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9869844956400062,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9872623034985437,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9833717120935297,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9507722007722008,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9869437798734221,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0218960653198395,
+    "kernel_target_alignment": 0.06374164060719348,
+    "offdiagonal_mean": 0.9968665011702441,
+    "offdiagonal_std": 0.004982201114416854
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.0095542559738677,
+    "kernel_target_alignment": 0.06311498733477486,
+    "offdiagonal_mean": 0.9988647394542133,
+    "offdiagonal_std": 0.0014332553714347478
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 2,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.003,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9869844956400062,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9872623034985437,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.8359073359073359,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8180483037137326,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9507722007722008,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9869437798734221,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 6.789583770221197,
+    "kernel_target_alignment": 0.2197656364993349,
+    "offdiagonal_mean": 0.4026285074093664,
+    "offdiagonal_std": 0.2784442808805462
+   },
+   "qubits": 2,
+   "rbf_kernel": {
+    "effective_rank": 1.0095542559738677,
+    "kernel_target_alignment": 0.06311498733477486,
+    "offdiagonal_mean": 0.9988647394542133,
+    "offdiagonal_std": 0.0014332553714347478
+   },
+   "resources": {
+    "feature_map_depth": 14,
+    "feature_map_two_qubit_gates": 4,
+    "fidelity_circuit_depth": 26,
+    "fidelity_circuit_two_qubit_gates": 6,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 2,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.933,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9642857142857143,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9914148938561556,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9626769626769627,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9854382661022048,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9507722007722008,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.988824533252006,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9614972114972116,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.991819612151685,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0780523474078763,
+    "kernel_target_alignment": 0.06467573803258525,
+    "offdiagonal_mean": 0.9884463550824839,
+    "offdiagonal_std": 0.011645856585870164
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 2.3194569615043985,
+    "kernel_target_alignment": 0.13182363426081165,
+    "offdiagonal_mean": 0.8029792886996567,
+    "offdiagonal_std": 0.14521249861499877
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.917,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9642857142857143,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9914148938561556,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9626769626769627,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9854382661022048,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.6488631488631489,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.5390462779136292,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9614972114972116,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.991819612151685,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 84.78951781417828,
+    "kernel_target_alignment": 0.11366658358967312,
+    "offdiagonal_mean": 0.0791218011891887,
+    "offdiagonal_std": 0.0965387989043946
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 2.3194569615043985,
+    "kernel_target_alignment": 0.13182363426081165,
+    "offdiagonal_mean": 0.8029792886996567,
+    "offdiagonal_std": 0.14521249861499877
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.892,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9877011608983943,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9890088962583887,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9424066924066924,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9857985400100925,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9638567138567138,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9884842923327253,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.062990731702915,
+    "kernel_target_alignment": 0.06404115441423983,
+    "offdiagonal_mean": 0.9909683613162119,
+    "offdiagonal_std": 0.00991754512364146
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 1.1261313950745513,
+    "kernel_target_alignment": 0.06818014556400306,
+    "offdiagonal_mean": 0.9812631122561585,
+    "offdiagonal_std": 0.018164961717059242
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.919,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9877011608983943,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9890088962583887,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7696267696267696,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.763942088282981,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9638567138567138,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9884842923327253,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 81.63003858779985,
+    "kernel_target_alignment": 0.11195134254960085,
+    "offdiagonal_mean": 0.07963374663260996,
+    "offdiagonal_std": 0.09975437141943268
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 1.1261313950745513,
+    "kernel_target_alignment": 0.06818014556400306,
+    "offdiagonal_mean": 0.9812631122561585,
+    "offdiagonal_std": 0.018164961717059242
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.922,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9974072259053441,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9974598742444096,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 0.5
+     },
+     "pr_auc": 0.9897440803937625,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9813384813384813,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.9975671779809273,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 5.870142909845674,
+    "kernel_target_alignment": 0.18185692679448437,
+    "offdiagonal_mean": 0.47936410149992337,
+    "offdiagonal_std": 0.2869356857227546
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 12.616447522261257,
+    "kernel_target_alignment": 0.3538488956810756,
+    "offdiagonal_mean": 0.32906188805144737,
+    "offdiagonal_std": 0.27103362704301104
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.5,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.95,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9974072259053441,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9974598742444096,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7843200343200343,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.8315433763214446,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9813384813384813,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.9975671779809273,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 72.64660061589927,
+    "kernel_target_alignment": 0.1238631122879732,
+    "offdiagonal_mean": 0.08959981309717005,
+    "offdiagonal_std": 0.11020823984403344
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 12.616447522261257,
+    "kernel_target_alignment": 0.3538488956810756,
+    "offdiagonal_mean": 0.32906188805144737,
+    "offdiagonal_std": 0.27103362704301104
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.927,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9897671197392872,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.991197183393125,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9948759371255785,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.984116628525483,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.071309333513901,
+    "kernel_target_alignment": 0.06421493948036085,
+    "offdiagonal_mean": 0.9895757288655311,
+    "offdiagonal_std": 0.01022428716985522
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 17.08337623441818,
+    "kernel_target_alignment": 0.33596545047036475,
+    "offdiagonal_mean": 0.27309989809786095,
+    "offdiagonal_std": 0.24830879626078367
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.944,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9897671197392872,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9666452166452166,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.991197183393125,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.6882239382239382,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.5942402182678674,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 1.0,
+      "gamma": 10.0
+     },
+     "pr_auc": 0.984116628525483,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 83.0292533853855,
+    "kernel_target_alignment": 0.1117616142274935,
+    "offdiagonal_mean": 0.08519769392387062,
+    "offdiagonal_std": 0.10080238268606621
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 17.08337623441818,
+    "kernel_target_alignment": 0.33596545047036475,
+    "offdiagonal_mean": 0.27309989809786095,
+    "offdiagonal_std": 0.24830879626078367
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.912,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9531317031317031,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9912831878259094,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9531317031317031,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9875070151238324,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9503432003432004,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9895524534105327,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9638567138567138,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9911615387030841,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.0658884085579956,
+    "kernel_target_alignment": 0.06439290173384835,
+    "offdiagonal_mean": 0.9904483142458267,
+    "offdiagonal_std": 0.009985173714082737
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 1.0168542674280285,
+    "kernel_target_alignment": 0.06316265870482189,
+    "offdiagonal_mean": 0.9980428631406336,
+    "offdiagonal_std": 0.0020749099591236783
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 4,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 0.966,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9531317031317031,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9912831878259094,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9531317031317031,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9875070151238324,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.7474259974259975,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7076978985983967,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9638567138567138,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.01
+     },
+     "pr_auc": 0.9911615387030841,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 80.16214264965348,
+    "kernel_target_alignment": 0.11232205990906378,
+    "offdiagonal_mean": 0.08128498377822661,
+    "offdiagonal_std": 0.10091325744615542
+   },
+   "qubits": 4,
+   "rbf_kernel": {
+    "effective_rank": 1.0168542674280285,
+    "kernel_target_alignment": 0.06316265870482189,
+    "offdiagonal_mean": 0.9980428631406336,
+    "offdiagonal_std": 0.0020749099591236783
+   },
+   "resources": {
+    "feature_map_depth": 23,
+    "feature_map_two_qubit_gates": 12,
+    "fidelity_circuit_depth": 44,
+    "fidelity_circuit_two_qubit_gates": 22,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 4,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 3.104,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9858263486383185,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9896207780136513,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9813384813384813,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9924769732304977,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9654654654654655,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9920075800212517,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.1550957293655744,
+    "kernel_target_alignment": 0.06519969109761521,
+    "offdiagonal_mean": 0.978063262757979,
+    "offdiagonal_std": 0.018339925957985972
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.859091788751345,
+    "kernel_target_alignment": 0.13853923118646772,
+    "offdiagonal_mean": 0.7099375914086546,
+    "offdiagonal_std": 0.16886685151869982
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.267,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9519519519519519,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9858263486383185,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9598884598884598,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9896207780136513,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5155512655512655,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.4800225209543731,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9654654654654655,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9920075800212517,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 194.94121188695615,
+    "kernel_target_alignment": 0.08501958449470923,
+    "offdiagonal_mean": 0.006409321199121193,
+    "offdiagonal_std": 0.015396953884706839
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.859091788751345,
+    "kernel_target_alignment": 0.13853923118646772,
+    "offdiagonal_mean": 0.7099375914086546,
+    "offdiagonal_std": 0.16886685151869982
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 3.06,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9937824389719898,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9797297297297297,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9926880425196287,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9717932217932217,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.988255619384406,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9717932217932217,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9909468739243531,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.13694473516059,
+    "kernel_target_alignment": 0.06423530808517236,
+    "offdiagonal_mean": 0.980792742102673,
+    "offdiagonal_std": 0.017543171764760605
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.2250998301719234,
+    "kernel_target_alignment": 0.06871166278221995,
+    "offdiagonal_mean": 0.968870714924504,
+    "offdiagonal_std": 0.02613703493680358
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.293,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9937824389719898,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9797297297297297,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9926880425196287,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5533033033033032,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6025591196583255,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9717932217932217,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9909468739243531,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 193.99150139880663,
+    "kernel_target_alignment": 0.08468816147114597,
+    "offdiagonal_mean": 0.006648918190931322,
+    "offdiagonal_std": 0.016990660425726258
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.2250998301719234,
+    "kernel_target_alignment": 0.06871166278221995,
+    "offdiagonal_mean": 0.968870714924504,
+    "offdiagonal_std": 0.02613703493680358
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 3.472,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9957207207207207,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9966911255145853,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9984410095026534,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9982059136066505,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.1405936964586456,
+    "kernel_target_alignment": 0.0647077885298162,
+    "offdiagonal_mean": 0.9802609415946529,
+    "offdiagonal_std": 0.020388399013942033
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.4047524488254584,
+    "kernel_target_alignment": 0.12700691037859108,
+    "offdiagonal_mean": 0.738429746464034,
+    "offdiagonal_std": 0.16499155538052337
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.351,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9957207207207207,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9966911255145853,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.6276276276276276,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6996332145366203,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9982059136066505,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 192.41790971382858,
+    "kernel_target_alignment": 0.08838047523276232,
+    "offdiagonal_mean": 0.007471980857690495,
+    "offdiagonal_std": 0.01911852035520065
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.4047524488254584,
+    "kernel_target_alignment": 0.12700691037859108,
+    "offdiagonal_mean": 0.738429746464034,
+    "offdiagonal_std": 0.16499155538052337
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 3.343,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9570999570999571,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9922522340781609,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9941189730506714,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.9879626242095811,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.965036465036465,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9889072624924756,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.439422409727532,
+    "kernel_target_alignment": 0.0689437909386476,
+    "offdiagonal_mean": 0.935261639258525,
+    "offdiagonal_std": 0.05307547619417999
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.6597497344819008,
+    "kernel_target_alignment": 0.12174346443333421,
+    "offdiagonal_mean": 0.7251729066149655,
+    "offdiagonal_std": 0.15981957436943323
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.37,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9570999570999571,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9922522340781609,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9941189730506714,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5584513084513084,
+     "hyperparameters": {
+      "C": 10.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6078740544798126,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.965036465036465,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9889072624924756,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 192.9439876909703,
+    "kernel_target_alignment": 0.08275531772589324,
+    "offdiagonal_mean": 0.007850216991152173,
+    "offdiagonal_std": 0.01860556161707806
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 3.6597497344819008,
+    "kernel_target_alignment": 0.12174346443333421,
+    "offdiagonal_mean": 0.7251729066149655,
+    "offdiagonal_std": 0.15981957436943323
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 3.123,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9938995448406026,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9582797082797083,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9906814988675192,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9531317031317031,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.25
+     },
+     "pr_auc": 0.9898373980455645,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9554912054912055,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.99644672281495,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 4.583478544603935,
+    "kernel_target_alignment": 0.09853495690807548,
+    "offdiagonal_mean": 0.6543398349819479,
+    "offdiagonal_std": 0.2003949311922779
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.2511721746548903,
+    "kernel_target_alignment": 0.06956888374042554,
+    "offdiagonal_mean": 0.9652293924920523,
+    "offdiagonal_std": 0.028845424815758115
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 8,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.25,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 1.374,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9938995448406026,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9582797082797083,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9906814988675192,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.6542256542256542,
+     "hyperparameters": {
+      "C": 1.0,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.7462426335739226,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9554912054912055,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.99644672281495,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 193.84024952602567,
+    "kernel_target_alignment": 0.08334472368008371,
+    "offdiagonal_mean": 0.006870617713281352,
+    "offdiagonal_std": 0.017168754828751756
+   },
+   "qubits": 8,
+   "rbf_kernel": {
+    "effective_rank": 1.2511721746548903,
+    "kernel_target_alignment": 0.06956888374042554,
+    "offdiagonal_mean": 0.9652293924920523,
+    "offdiagonal_std": 0.028845424815758115
+   },
+   "resources": {
+    "feature_map_depth": 35,
+    "feature_map_two_qubit_gates": 28,
+    "fidelity_circuit_depth": 68,
+    "fidelity_circuit_two_qubit_gates": 54,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 8,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 6.553,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9956250330971579,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9955037610479037,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9801587301587302,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.996061917788522,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9985884545185194,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.255276167807197,
+    "kernel_target_alignment": 0.06569042059112287,
+    "offdiagonal_mean": 0.9654543328165924,
+    "offdiagonal_std": 0.025047557511893546
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.296512498023239,
+    "kernel_target_alignment": 0.14213857014334572,
+    "offdiagonal_mean": 0.5934422632202199,
+    "offdiagonal_std": 0.18059605648619065
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 0,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.4,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9491634491634491,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.988029444653059,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9956250330971579,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9678249678249677,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9955037610479037,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5,
+     "hyperparameters": {
+      "C": 0.1,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.48262480231484844,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9785499785499785,
+     "hyperparameters": {
+      "C": 10.0,
+      "gamma": 1.0
+     },
+     "pr_auc": 0.9985884545185194,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 199.9547590094957,
+    "kernel_target_alignment": 0.07188791318525341,
+    "offdiagonal_mean": 0.0004497538754985524,
+    "offdiagonal_std": 0.0014437208796004059
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 7.296512498023239,
+    "kernel_target_alignment": 0.14213857014334572,
+    "offdiagonal_mean": 0.5934422632202199,
+    "offdiagonal_std": 0.18059605648619065
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 0,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 6.553,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9813384813384813,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9946618449972364,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9940123049879147,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9312526812526812,
+     "hyperparameters": {
+      "C": 100.0,
+      "bandwidth": 0.1
+     },
+     "pr_auc": 0.9857684353310929,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9914183147649049,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.65556804889741,
+    "kernel_target_alignment": 0.06993866755528987,
+    "offdiagonal_mean": 0.9125138076417312,
+    "offdiagonal_std": 0.06548137765589021
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3468135975203428,
+    "kernel_target_alignment": 0.06954350727613881,
+    "offdiagonal_mean": 0.9546146074002791,
+    "offdiagonal_std": 0.034142183134563055
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 1,
+   "selected_bandwidth": 0.1,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.266,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.961068211068211,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9840813603925374,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9813384813384813,
+     "hyperparameters": {
+      "C": 1000.0
+     },
+     "pr_auc": 0.9946618449972364,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10000.0
+     },
+     "pr_auc": 0.9940123049879147,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5,
+     "hyperparameters": {
+      "C": 0.1,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.5448653413423569,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9825182325182326,
+     "hyperparameters": {
+      "C": 10000.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9914183147649049,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 199.74367746196077,
+    "kernel_target_alignment": 0.07321751516738019,
+    "offdiagonal_mean": 0.000644684462682388,
+    "offdiagonal_std": 0.0035360961285335548
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3468135975203428,
+    "kernel_target_alignment": 0.06954350727613881,
+    "offdiagonal_mean": 0.9546146074002791,
+    "offdiagonal_std": 0.034142183134563055
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 1,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 6.489,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9757614757614758,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9913382199882396,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9853067353067353,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.992645742654272,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9638567138567138,
+     "hyperparameters": {
+      "C": 10000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9672741922465661,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9892749892749892,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9904124424556306,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.2243909883475912,
+    "kernel_target_alignment": 0.0650108366655736,
+    "offdiagonal_mean": 0.9695961766978656,
+    "offdiagonal_std": 0.0287368841199716
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3676717599044264,
+    "kernel_target_alignment": 0.06996542973625408,
+    "offdiagonal_mean": 0.9517131234868985,
+    "offdiagonal_std": 0.037652897255505025
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 2,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.246,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9706134706134706,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9975562575562575,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9757614757614758,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9913382199882396,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9853067353067353,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.992645742654272,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5,
+     "hyperparameters": {
+      "C": 0.1,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6427776427224803,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9892749892749892,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9904124424556306,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 199.89503470454957,
+    "kernel_target_alignment": 0.07248676022403779,
+    "offdiagonal_mean": 0.0005259625232797808,
+    "offdiagonal_std": 0.002243418027140979
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3676717599044264,
+    "kernel_target_alignment": 0.06996542973625408,
+    "offdiagonal_mean": 0.9517131234868985,
+    "offdiagonal_std": 0.037652897255505025
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 2,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 6.506,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9559202059202059,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9925854302251269,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9690047190047191,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.994896771018877,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9515229515229515,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9928534409060668,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9463749463749465,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9934651767566897,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.234464826671779,
+    "kernel_target_alignment": 0.06475213813580216,
+    "offdiagonal_mean": 0.9683124740861799,
+    "offdiagonal_std": 0.02341454340956944
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3811102764636367,
+    "kernel_target_alignment": 0.06960610516553052,
+    "offdiagonal_mean": 0.9504723832505332,
+    "offdiagonal_std": 0.033019455776876754
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 3,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.346,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9745817245817245,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9897675300506248,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9559202059202059,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9925854302251269,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.9690047190047191,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.994896771018877,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5,
+     "hyperparameters": {
+      "C": 0.1,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.48871808086892937,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9463749463749465,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9934651767566897,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 199.83925073988996,
+    "kernel_target_alignment": 0.07197103400437901,
+    "offdiagonal_mean": 0.0005533524340669973,
+    "offdiagonal_std": 0.002794361013628854
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3811102764636367,
+    "kernel_target_alignment": 0.06960610516553052,
+    "offdiagonal_mean": 0.9504723832505332,
+    "offdiagonal_std": 0.033019455776876754
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 3,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 6.377,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9662162162162162,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9930825202360782,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.972972972972973,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9921927354568647,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.9622479622479623,
+     "hyperparameters": {
+      "C": 1000.0,
+      "bandwidth": 0.05
+     },
+     "pr_auc": 0.9897614974018332,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9622479622479623,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9914889382884216,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 1.2194931772351365,
+    "kernel_target_alignment": 0.06517546149317206,
+    "offdiagonal_mean": 0.9705020335786331,
+    "offdiagonal_std": 0.02521923033466245
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3680365322471553,
+    "kernel_target_alignment": 0.07047002399259013,
+    "offdiagonal_mean": 0.9519438132841999,
+    "offdiagonal_std": 0.037740490199366046
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 159400,
+    "qubits": 12,
+    "statevectors_simulated": 1400
+   },
+   "seed": 4,
+   "selected_bandwidth": 0.05,
+   "variant": "tuned"
+  },
+  {
+   "dataset": "breast_cancer",
+   "elapsed_seconds": 2.296,
+   "models": {
+    "LightGBM (all features)": {
+     "balanced_accuracy": 0.9487344487344487,
+     "hyperparameters": {
+      "learning_rate": 0.05,
+      "min_child_samples": 10,
+      "n_estimators": 200,
+      "num_leaves": 15,
+      "tuned": false
+     },
+     "pr_auc": 0.9861177784164744,
+     "tier": "full-feature classical control"
+    },
+    "Linear SVM": {
+     "balanced_accuracy": 0.9662162162162162,
+     "hyperparameters": {
+      "C": 10.0
+     },
+     "pr_auc": 0.9930825202360782,
+     "tier": "matched classical"
+    },
+    "Logistic regression": {
+     "balanced_accuracy": 0.972972972972973,
+     "hyperparameters": {
+      "C": 100.0
+     },
+     "pr_auc": 0.9921927354568647,
+     "tier": "matched classical"
+    },
+    "Quantum-kernel SVM": {
+     "balanced_accuracy": 0.5,
+     "hyperparameters": {
+      "C": 0.1,
+      "bandwidth": 3.141592653589793
+     },
+     "pr_auc": 0.6597695335985913,
+     "tier": "matched quantum"
+    },
+    "RBF SVM": {
+     "balanced_accuracy": 0.9622479622479623,
+     "hyperparameters": {
+      "C": 100.0,
+      "gamma": 0.1
+     },
+     "pr_auc": 0.9914889382884216,
+     "tier": "matched classical"
+    }
+   },
+   "quantum_kernel": {
+    "effective_rank": 199.80498105280412,
+    "kernel_target_alignment": 0.07260479639305197,
+    "offdiagonal_mean": 0.0007073277352194311,
+    "offdiagonal_std": 0.0030657706770078
+   },
+   "qubits": 12,
+   "rbf_kernel": {
+    "effective_rank": 1.3680365322471553,
+    "kernel_target_alignment": 0.07047002399259013,
+    "offdiagonal_mean": 0.9519438132841999,
+    "offdiagonal_std": 0.037740490199366046
+   },
+   "resources": {
+    "feature_map_depth": 47,
+    "feature_map_two_qubit_gates": 44,
+    "fidelity_circuit_depth": 92,
+    "fidelity_circuit_two_qubit_gates": 86,
+    "hardware_fidelity_circuits": 59900,
+    "qubits": 12,
+    "statevectors_simulated": 400
+   },
+   "seed": 4,
+   "selected_bandwidth": 3.141592653589793,
+   "variant": "fixed_pi"
+  }
+ ]
+}
